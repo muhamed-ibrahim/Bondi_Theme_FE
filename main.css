@@ -1,0 +1,225 @@
+:root{
+    --dark-color:#19283f;
+    --white-color:#f8f9fa;
+    --green-color:#33d1cc;
+    --red-color:#ff3150;
+    --yellow-color:#ffc400;
+    --section-color:#eff7fa;
+}
+.mainbutton{
+    background-color: var(--red-color);
+    color: var(--yellow-color);
+}
+.main-title::after{
+    content: "";
+    width: 120px;
+    height: 2px;
+    background-color: var(--green-color);
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+}
+
+body{
+    font-family:"Roboto", sans-serif;
+}
+/* start end */
+.navbar{
+    background-color:var(--dark-color);
+}
+
+.navbar .nav-item .nav-link{
+    color: var(--white-color);
+}
+.navbar .nav-item .nav-link.active,
+.navbar .nav-item .nav-link:focus,
+.navbar .nav-item .nav-link:hover{
+    color: var(--green-color);
+}
+.navbar .search{
+    border-left:1px solid var(--green-color); 
+    color: var(--green-color);
+}
+.navbar .navbar-toggler{
+    color: var(--white-color);
+    font-size: 25px;
+    border-color: var(--white-color);
+}
+.navbar .navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar .navbar-toggler[aria-expanded="true"]{
+    border-color: var(--green-color);
+}
+/* end nav  */
+
+/* start landing */
+.landing{
+    min-height:calc(100vh - 70px);
+    background-color: var(--dark-color);
+}
+/* end landing */
+
+/* start features */
+.features .icon-holder{
+    height: 200px;
+}
+.features .icon-holder .number{
+    position: absolute;
+    bottom: 0%;
+    font-size: 12rem;
+    color: var(--section-color);
+}
+.features .icon-holder .icon{
+    position: absolute;
+    bottom: 0%;
+    font-size: 4rem;
+    color: var(--green-color);
+}
+.features .icon-holder svg{
+    left: 50%;
+    transform: translateX(-50%);
+}
+.features .row h1{
+    color: var(--yellow-color);
+}
+/* end features */
+
+
+/* start our work */
+.our-work{
+    
+    background-color: var(--section-color);
+    overflow: hidden;
+}
+.our-work ul li:hover{
+    cursor: pointer;
+}
+.our-work ul li:hover:not(.active){
+    color: var(--red-color);
+}
+.our-work .box{
+    overflow: hidden;
+    padding: 5px;
+    position: relative;
+}
+.our-work .box::before{
+    content:"Application";
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    background-color: var(--green-color);
+    opacity: 0.8;
+    width: calc(100% - 10px);
+    height: calc(100% - 10px);
+    position: absolute;
+    transform: translateX(calc(-100% - 10px));
+    transition: all 1s;
+}
+.our-work .box:hover::before{
+    transform: translate(0);
+}
+/* end our work */
+
+/* start staff */
+
+/* end staff */
+
+
+/* start meet */
+.meet{
+    background-color: var(--section-color);
+}
+.meet h1{
+    color: var(--yellow-color);
+}
+
+.meet .box h3{
+    background-color: var(--green-color);
+    color: white;
+}
+/* end meet */
+
+/* start tech */
+
+/* end tech */
+
+/* start project */
+.project{
+    background-color: var(--dark-color);
+}
+.project h3{
+    color: white;
+}
+
+/* end project */
+
+/* start blog */
+
+/* end blog */
+
+/* start email */
+.email {
+    background-color: var(--yellow-color);
+}
+.email input[type="email"]{
+    border: none;
+    outline: none;
+    background-color: var(--yellow-color);
+    color: white;
+    padding-bottom:5px;
+    border-bottom: 1px solid white; 
+}
+::placeholder{
+    color: white;
+}
+.email .btn{
+    width: 100px;
+    background-color: var(--dark-color);
+    color: var(--yellow-color);
+}
+
+/* end email */
+
+
+/* start footer */
+.footer{
+    background-color: var(--dark-color);
+}
+.footer .create span{
+    color: var(--green-color);
+}
+.footer .copy span{
+    color: var(--yellow-color);
+}
+.footer .last ul li svg{
+    padding: 10px;
+}
+.footer .last li .facebook{
+    background-color: #1877F2;
+}
+.footer .last li .twitter{
+    background-color: #1DA1F2;
+}
+.footer .last li .linkedin{
+    background-color: #0A66C2;
+}
+.footer .last li .youtube{
+    background-color: #CD201F;
+}
+
+
+/* end footer */
+
+.UP{
+    background-color: var(--red-color);
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
